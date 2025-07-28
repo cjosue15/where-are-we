@@ -19,8 +19,7 @@ import { User, users } from '../../data';
           <div
             class="flex items-center justify-center bg-gray-300 rounded-full size-10 overflow-hidden"
           >
-            <img [src]="user.image" width="40" height="40" priority />
-            <!-- <img [ngSrc]="user.image" width="40" height="40" priority /> -->
+            <img [ngSrc]="user.image" width="40" height="40" priority />
           </div>
           <div>
             <h3>{{ user.name }}</h3>

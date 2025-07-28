@@ -3,6 +3,7 @@ export interface User {
   name: string;
   currentLocation: string;
   image: string;
+  strokeColor: string;
   positions: {
     start: {
       lat: number;
@@ -27,6 +28,7 @@ export const users: User[] = [
     },
     currentLocation: 'Argentina',
     image: '/images/lean.jpeg',
+    strokeColor: '#FF0000',
   },
   {
     id: 2,
@@ -37,6 +39,7 @@ export const users: User[] = [
     },
     currentLocation: 'Chile',
     image: '/images/julio.jpeg',
+    strokeColor: '#00FF00',
   },
   {
     id: 3,
@@ -47,6 +50,7 @@ export const users: User[] = [
     },
     currentLocation: 'Perú',
     image: '/images/josue.jpeg',
+    strokeColor: '#0000FF',
   },
   {
     id: 4,
@@ -57,6 +61,7 @@ export const users: User[] = [
     },
     currentLocation: 'Argentina',
     image: '/images/rojas.jpeg',
+    strokeColor: '#FFFF00',
   },
   {
     id: 5,
@@ -67,6 +72,7 @@ export const users: User[] = [
     },
     currentLocation: 'Argentina',
     image: '/images/africano.jpeg',
+    strokeColor: '#FF00FF',
   },
   {
     id: 6,
@@ -81,5 +87,6 @@ export const users: User[] = [
     },
     currentLocation: 'Argentina',
     image: '/images/carlos.jpeg',
+    strokeColor: '#00FFFF',
   },
 ];

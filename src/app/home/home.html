@@ -1,7 +1,7 @@
 <div class="flex gap-5">
   <list-user (onChange)="createMarkers($event)" [selectedId]="selectedId()" />
 
-  <div class="w-full flex flex-col gap-5">
+  <div class="w-full flex flex-col gap-5 mr-5">
     <div
       class="relative bg-white p-4 rounded-md border border-border z-50 h-24 mt-5 flex items-center justify-between"
     >
@@ -21,7 +21,7 @@
       </div>
     </div>
 
-    <div class="border border-border rounded-md overflow-hidden">
+    <div class="border border-border rounded-md overflow-hidden relative">
       <google-map
         [options]="options"
         width="100%"
@@ -86,6 +86,8 @@
       }"
     ></map-polyline> -->
       </google-map>
+
+      <view-all />
     </div>
   </div>
 </div>
