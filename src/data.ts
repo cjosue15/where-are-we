@@ -75,8 +75,8 @@ export const users: User[] = [
     id: 6,
     name: 'Carlos Pisarello',
     positions: {
-      start: { lat: -26.7059274, lng: -60.9435806 },
-      end: { lat: -31.3992803, lng: -64.2766132 },
+      start: { lat: -27.4606615, lng: -58.9953453 },
+      end: { lat: -31.3994532, lng: -64.1942124 },
     },
     currentLocation: 'Argentina',
     image:
