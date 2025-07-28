@@ -3,10 +3,22 @@
 
   <div class="w-full flex flex-col gap-5">
     <div
-      class="relative bg-white p-4 rounded-md border border-border z-50 h-24 mt-5"
+      class="relative bg-white p-4 rounded-md border border-border z-50 h-24 mt-5 flex items-center justify-between"
     >
-      <h4>Distance between markers</h4>
-      <p>{{ distanceKm() }} km / {{ distanceMiles() }} mi</p>
+      <div>
+        <p>{{ currentUser()?.name }}</p>
+        <div class="flex gap-2 items-center font-semibold">
+          <p>{{ currentUser()?.positions?.start?.label }}</p>
+          <span>/</span>
+          <p>{{ currentUser()?.positions?.end?.label }}</p>
+        </div>
+      </div>
+      <div>
+        <h4>Distance between markers</h4>
+        <p class="font-semibold">
+          {{ distanceKm() }} km / {{ distanceMiles() }} mi
+        </p>
+      </div>
     </div>
 
     <div class="border border-border rounded-md overflow-hidden">

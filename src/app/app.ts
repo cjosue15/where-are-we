@@ -4,6 +4,7 @@ import {
   viewChild,
   OnInit,
   TemplateRef,
+  computed,
 } from '@angular/core';
 import {
   GoogleMap,
@@ -40,6 +41,13 @@ export class App implements OnInit {
   options: google.maps.MapOptions = {
     mapId: 'bbec20c37cf8cfc64c60bf20',
   };
+
+  currentUser = computed(() => {
+    return this.users().find((user) => user.id === this.selectedId()) || null;
+  });
+
+  users = signal<User[]>(users);
+
   distanceMeters = signal<number | null>(null);
 
   distanceKm = signal<number | null>(null);
