@@ -58,7 +58,6 @@ export default class Home {
   }
 
   createMarkers(user: User) {
-    console.log(user);
     this.selectedId.set(user.id);
     this.markers.set([
       {
