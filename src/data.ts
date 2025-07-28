@@ -26,8 +26,7 @@ export const users: User[] = [
       end: { lat: -38.7225427, lng: -62.2926083, label: 'Bahía Blanca' },
     },
     currentLocation: 'Argentina',
-    image:
-      'https://media.licdn.com/dms/image/v2/C4E03AQFXugz-iHBNGg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1570923563828?e=1756339200&v=beta&t=A_nNWJJvexuk0twc0Lk6yUGwH8YW2-7tdICP18V0hnY',
+    image: '/images/lean.jpeg',
   },
   {
     id: 2,
@@ -37,8 +36,7 @@ export const users: User[] = [
       end: { lat: -33.4679938, lng: -70.6290294, label: 'Santiago de Chile' },
     },
     currentLocation: 'Chile',
-    image:
-      'https://media.licdn.com/dms/image/v2/D4E03AQEqc9s7rZolag/profile-displayphoto-crop_800_800/B4EZgu3_1fHIAI-/0/1753133088742?e=1756339200&v=beta&t=Wt6J7K6VjIx1y0EoW05O5ftSWKbYjmDuJxAVNue1sDw',
+    image: '/images/julio.jpeg',
   },
   {
     id: 3,
@@ -48,8 +46,7 @@ export const users: User[] = [
       end: { lat: -12.1518602, lng: -77.0113312, label: 'Lima - Surco' },
     },
     currentLocation: 'Perú',
-    image:
-      'https://media.licdn.com/dms/image/v2/D4E03AQFSzpYmB09xKg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1728169306386?e=1756339200&v=beta&t=D9GVbcGGe2KTXKPuqD6_76KoOFIovkpht8p6HjW-NN4',
+    image: '/images/josue.jpeg',
   },
   {
     id: 4,
@@ -59,8 +56,7 @@ export const users: User[] = [
       end: { lat: -34.9205082, lng: -57.9531703, label: 'La Plata' },
     },
     currentLocation: 'Argentina',
-    image:
-      'https://media.licdn.com/dms/image/v2/C4D03AQGk_ECU8033Iw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1657025775711?e=1756339200&v=beta&t=QUwd-cbThq4hSDogxrsZmL60aRzTP2pu09s70UZNe3k',
+    image: '/images/rojas.jpeg',
   },
   {
     id: 5,
@@ -70,8 +66,7 @@ export const users: User[] = [
       end: { lat: -34.6158238, lng: -58.4332985, label: 'Buenos Aires' },
     },
     currentLocation: 'Argentina',
-    image:
-      'https://media.licdn.com/dms/image/v2/D4D03AQHni-iTvF76Uw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1704917204020?e=1756339200&v=beta&t=egKhxpfLzIE6JR1HkqxoRho_sWKbY7BYAXdxuGoDRQY',
+    image: '/images/africano.jpeg',
   },
   {
     id: 6,
@@ -85,7 +80,6 @@ export const users: User[] = [
       end: { lat: -31.3994532, lng: -64.1942124, label: 'Córdoba' },
     },
     currentLocation: 'Argentina',
-    image:
-      'https://media.licdn.com/dms/image/v2/C5603AQF0vaUf5d70zA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1517835350539?e=1756339200&v=beta&t=s6ReMLZxZTJgyLmuJWXYH_5oTRCWuI3G79avK37WaKw',
+    image: '/images/carlos.jpeg',
   },
 ];
