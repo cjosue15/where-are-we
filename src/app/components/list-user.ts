@@ -11,13 +11,13 @@ import { User, users } from '../../data';
     >
       @for (user of users(); track user.id) {
         <li
-          class="w-48 lg:w-full border border-gray-300 p-4 rounded-xl flex items-start gap-4 cursor-pointer hover:shadow-md transition shrink-0"
+          class="w-52 lg:w-full border border-gray-300 p-4 rounded-xl flex items-start gap-4 cursor-pointer hover:shadow-md transition shrink-0"
           [class.bg-blue-50]="selectedId() === user.id"
           [class.!border-blue-600]="selectedId() === user.id"
           (click)="onChange.emit(user)"
         >
           <div
-            class="flex items-center justify-center bg-gray-300 rounded-full size-10 overflow-hidden"
+            class="flex shrink-0 items-center justify-center bg-gray-300 rounded-full size-10 overflow-hidden"
           >
             <img [ngSrc]="user.image" width="40" height="40" priority />
           </div>
