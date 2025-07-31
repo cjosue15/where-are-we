@@ -7,11 +7,11 @@ import { User, users } from '../../data';
   imports: [NgOptimizedImage],
   template: `
     <uL
-      class="min-w-80 p-4 bg-white min-h-screen border-r border border-border"
+      class="min-w-80 p-4 bg-white lg:min-h-screen border-r border border-border flex flex-row lg:flex-col overflow-y-auto gap-4"
     >
       @for (user of users(); track user.id) {
         <li
-          class="border border-gray-300 mb-4 last:mb-0 p-4 rounded-xl flex items-start gap-4 cursor-pointer hover:shadow-md transition"
+          class="w-48 lg:w-full border border-gray-300 p-4 rounded-xl flex items-start gap-4 cursor-pointer hover:shadow-md transition shrink-0"
           [class.bg-blue-50]="selectedId() === user.id"
           [class.!border-blue-600]="selectedId() === user.id"
           (click)="onChange.emit(user)"
