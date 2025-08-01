@@ -7,7 +7,7 @@ import { User, users } from '../../data';
   imports: [NgOptimizedImage],
   template: `
     <uL
-      class="min-w-80 p-4 bg-white lg:min-h-screen border-r border border-border flex flex-row lg:flex-col overflow-y-auto gap-4"
+      class="min-w-80 p-4 bg-white lg:h-screen lg:overflow-y-auto border-r border border-border flex flex-row lg:flex-col overflow-y-auto gap-4"
     >
       @for (user of users(); track user.id) {
         <li
