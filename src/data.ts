@@ -167,4 +167,15 @@ export const users: User[] = [
     image: '/images/joel.jpeg',
     strokeColor: '#800000',
   },
+  {
+    id: 13,
+    name: 'Keiler Mora',
+    positions: {
+      start: { lat: 10.468687, lng: -67.0551773, label: 'Caracas' },
+      end: { lat: -33.4706523, lng: -71.2536739, label: 'Santiago de Chile' },
+    },
+    currentLocation: 'Chile',
+    image: '/images/keiler.jpeg',
+    strokeColor: '#008080',
+  },
 ];
