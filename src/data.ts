@@ -178,4 +178,15 @@ export const users: User[] = [
     image: '/images/keiler.jpeg',
     strokeColor: '#008080',
   },
+  {
+    id: 14,
+    name: 'Isaac Zimberg',
+    positions: {
+      start: { lat: 32.9652978, lng: -117.0378771, label: 'Poway, CA' },
+      end: { lat: 37.2322937, lng: -121.992509, label: 'Los Gatos, CA' },
+    },
+    currentLocation: 'United States',
+    image: '/images/isaac.jpeg',
+    strokeColor: '#FFA500',
+  },
 ];
