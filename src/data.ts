@@ -89,4 +89,82 @@ export const users: User[] = [
     image: '/images/carlos.jpeg',
     strokeColor: '#00FFFF',
   },
+  {
+    id: 7,
+    name: 'Martin Collazo',
+    positions: {
+      start: { lat: -34.676741, lng: -58.382979, label: 'Buenos Aires' },
+      end: { lat: -34.632755, lng: -58.3671581, label: 'Lima - Surco' },
+    },
+    currentLocation: 'Argentina',
+    image: '/images/martin.jpeg',
+    strokeColor: '#800080',
+  },
+  {
+    id: 8,
+    name: 'Aly Zuniaga',
+    positions: {
+      start: { lat: 10.468687, lng: -67.0551773, label: 'Caracas' },
+      end: { lat: -34.6151444, lng: -58.7451261, label: 'Buenos Aires' },
+    },
+    currentLocation: 'Argentina',
+    image: '/images/aly.jpeg',
+    strokeColor: '#808080',
+  },
+  {
+    id: 9,
+    name: 'Diego Sanchez',
+    positions: {
+      start: { lat: 10.2052649, lng: -71.2560973, label: 'Maracaibo' },
+      end: { lat: 45.0702306, lng: 7.5876887, label: 'Torino' },
+    },
+    currentLocation: 'Italia',
+    image: '/images/diego.jpeg',
+    strokeColor: '#C0C0C0',
+  },
+  {
+    id: 10,
+    name: 'Tadeo Koloszwa',
+    positions: {
+      start: {
+        lat: -33.0816216,
+        lng: -68.4746909,
+        label: 'San Martin - Mendoza',
+      },
+      end: {
+        lat: -32.9028019,
+        lng: -68.8150001,
+        label: 'Guaymallén - Mendoza',
+      },
+    },
+    currentLocation: 'Argentina',
+    image: '/images/tadeo.jpeg',
+    strokeColor: '#FF4500',
+  },
+  {
+    id: 11,
+    name: 'Dariel Chirino',
+    positions: {
+      start: { lat: 23.0500951, lng: -82.9568956, label: 'La Habana - Cuba' },
+      end: { lat: -34.6151444, lng: -58.7451261, label: 'Buenos Aires' },
+    },
+    currentLocation: 'Argentina',
+    image: '/images/dariel.jpeg',
+    strokeColor: '#008000',
+  },
+  {
+    id: 12,
+    name: 'Joel Rojas',
+    positions: {
+      start: {
+        lat: 10.3484402,
+        lng: -67.0623926,
+        label: 'Los Teques - Venezuela',
+      },
+      end: { lat: -34.6151444, lng: -58.7451261, label: 'Buenos Aires' },
+    },
+    currentLocation: 'Argentina',
+    image: '/images/joel.jpeg',
+    strokeColor: '#800000',
+  },
 ];
