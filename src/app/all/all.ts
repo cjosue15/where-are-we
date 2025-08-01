@@ -61,7 +61,7 @@ import { User, users } from '../../data';
         ></map-polyline>
       }
 
-      <div class="flex items-center gap-5 absolute bottom-4 left-4">
+      <div class="flex items-center gap-5 absolute bottom-4 left-4 w-full">
         <button
           class="bg-green-500 text-white px-4 py-2 rounded-md"
           (click)="backToViewAll()"
