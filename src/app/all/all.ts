@@ -1,11 +1,11 @@
-import { Component, signal, viewChild } from '@angular/core';
+import { AfterViewInit, Component, signal, viewChild } from '@angular/core';
 import {
   GoogleMap,
   MapAdvancedMarker,
   MapPolyline,
 } from '@angular/google-maps';
-import { User, users } from '../../data';
 import { RouterLink } from '@angular/router';
+import { User, users } from '../../data';
 
 @Component({
   selector: 'view-all',
@@ -86,7 +86,7 @@ import { RouterLink } from '@angular/router';
     }
   `,
 })
-export default class ViewAll {
+export default class ViewAll implements AfterViewInit {
   center: google.maps.LatLngLiteral = { lat: -15.2020952, lng: -69.2603208 };
 
   options: google.maps.MapOptions = {
@@ -96,8 +96,6 @@ export default class ViewAll {
   users = signal<User[]>(users);
 
   map = viewChild.required(GoogleMap);
-
-  zoom = signal(4);
 
   getPositionsByUser(user: User): Array<{ lat: number; lng: number }> {
     return [
@@ -110,6 +108,10 @@ export default class ViewAll {
         lng: user.positions.end.lng,
       },
     ];
+  }
+
+  ngAfterViewInit() {
+    this.backToViewAll();
   }
 
   getStartMarkerContent(): HTMLElement {
