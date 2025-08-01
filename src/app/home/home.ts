@@ -39,6 +39,12 @@ export default class Home {
 
   users = signal<User[]>(users);
 
+  sortedUsers = computed(() => {
+    return this.users().toSorted((a, b) => {
+      return a.name.localeCompare(b.name);
+    });
+  });
+
   distanceMeters = signal<number | null>(null);
 
   distanceKm = signal<number | null>(null);
@@ -53,7 +59,7 @@ export default class Home {
 
   ngOnInit() {
     Promise.resolve().then(() => {
-      this.createMarkers({ ...users[0] });
+      this.createMarkers({ ...this.sortedUsers()[0] });
     });
   }
 

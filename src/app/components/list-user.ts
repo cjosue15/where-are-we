@@ -1,5 +1,5 @@
-import { Component, input, output, signal } from '@angular/core';
 import { NgOptimizedImage } from '@angular/common';
+import { Component, input, output } from '@angular/core';
 import { User, users } from '../../data';
 
 @Component({
@@ -33,7 +33,7 @@ import { User, users } from '../../data';
   `,
 })
 export class ListUser {
-  users = signal<User[]>(users);
+  users = input.required<User[]>();
 
   selectedId = input<number | undefined>(undefined);
 
